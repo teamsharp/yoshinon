@@ -124,23 +124,21 @@
 			</div>
 			<div class='window-content'>
 				<pre class="line-numbers"><code class="language-javascript">
-"use strict";
+"use yoshinon";
 
+var cYoshinon = new Character("四糸乃", {
+	"color": "#3CAACF",
+	"decoration": "none"
+});
 
-class Idea extends Eloquent {
-
-	/**
-	 * Dreaming of something more?
-	 *
-	 * @with  Laravel
-	 */
-	 public function create()
-	 {
-	 	// Have a fresh start...
-	 }
-
+public function start(){
+	cYoshinon.say("四糸乃は愛です。");
+	cYoshinon.voice(new Voice("Yoshinon/ai_desu.wav"));
+	
+	return true;
 }
 
+__init__();
 	</code></pre>
 				</div>
 			</div>
