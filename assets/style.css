@@ -1332,7 +1332,7 @@ pre.line-numbers > code {
     color: rgba(255, 255, 255, 0.5); }
   .btn:hover,
   .btn:active {
-    background: #e74430;
+    background: #3CAACF;
     color: #fff; }
 
 footer.main {
@@ -1382,7 +1382,7 @@ nav.main {
     display: table;
     clear: both; }
   nav.main a.brand {
-    color: #e74430;
+    color: #3CAACF;
     font-size: 21px;
     float: left;
     line-height: 90px;
@@ -1708,7 +1708,7 @@ nav.main {
   .sidebar a {
     line-height: 1.5; }
     .sidebar a:hover {
-      color: #e74430; }
+      color: #3CAACF; }
 
 @media (max-width: 1080px) {
   .sidebar {
