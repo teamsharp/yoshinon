@@ -121,21 +121,21 @@
 				</div>
 				<div class='window-content'>
 					<pre class="line-numbers"><code class="language-javascript">
-	"use yoshinon";
+"use yoshinon";
+
+var cYoshinon = new Character("四糸乃", {
+	"color": "#3CAACF",
+	"decoration": "none"
+});
+
+public function start(){
+	cYoshinon.say("四糸乃は愛です。");
+	cYoshinon.voice(new Voice("Yoshinon/ai_desu.wav"));
 	
-	var cYoshinon = new Character("四糸乃", {
-		"color": "#3CAACF",
-		"decoration": "none"
-	});
-	
-	public function start(){
-		cYoshinon.say("四糸乃は愛です。");
-		cYoshinon.voice(new Voice("Yoshinon/ai_desu.wav"));
-		
-		return true;
-	}
-	
-	__init__();
+	return true;
+}
+
+__init__();
 						</code></pre>
 					</div>
 				</div>
@@ -167,20 +167,16 @@
 							</div>
 						</div>
 						<div class='window-content'>
-							<pre class="line-numbers"><code class="language-python">
-class Purchase implements ShouldQueue {
+							<pre class="line-numbers"><code class="language-javascript">
+"use yoshinon";
 
-	/**
-	 * Purchase a new podcast.
-	 */
-	 public function handle(Repository $repo)
-	 {
-	 	foreach ($this->purchases as $purchase)
-	 	{
-	 		//
-	 	}
-	 }
-</code></pre>
+class Character implements YosnObject {
+	public function __constructor(chName, optObject){
+		chName = typeof chName !== "undefined" ? chName : "匿名";
+		if(typeof optObject !== "object") throw new Error("Type of optObject must be \"object\".");
+	}
+}
+							</code></pre>
 						</div>
 					</div>
 
