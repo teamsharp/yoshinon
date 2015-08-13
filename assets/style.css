@@ -360,7 +360,7 @@ body {
   color: #525252;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
-  background: #fff url("/assets/img/cloud-bar.png") repeat-x;
+  background: #fff url("http://laravel.com/assets/img/cloud-bar.png") repeat-x;
   padding-top: 10px; }
 
 .container {
@@ -1547,7 +1547,7 @@ nav.main {
           color: #80878c; }
   .panel.ecosystem {
     padding: 150px 0 75px;
-    background: url("/assets/img/laravel-tucked.png") center top no-repeat; }
+    background: url("http://laravel.com/assets/img/laravel-tucked.png") center top no-repeat; }
     .panel.ecosystem > h1,
     .panel.ecosystem > p {
       margin: 0 0 20px 0;
@@ -1837,7 +1837,7 @@ nav.main {
   margin: 0 auto; }
   .docs #search-wrapper .icon {
     content: '';
-    background: url("/assets/img/search_icon.png") center center no-repeat;
+    background: url("http://laravel.com/assets/img/search_icon.png") center center no-repeat;
     position: absolute;
     right: 12px;
     top: 9px;
@@ -1847,7 +1847,7 @@ nav.main {
     z-index: 200; }
 
 #search-wrapper.not-empty .icon {
-  background: url("/assets/img/cross_icon.png") center center no-repeat;
+  background: url("http://laravel.com/assets/img/cross_icon.png") center center no-repeat;
   cursor: pointer; }
 
 #search-input {
