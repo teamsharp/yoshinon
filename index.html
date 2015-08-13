@@ -173,7 +173,7 @@ __init__();
 							<pre class="line-numbers"><code class="language-javascript">
 "use yoshinon";
 
-class Character implements YosnObject {
+class Character implements YoshinonObject {
 	public function __constructor(chName, optObject){
 		chName = typeof chName !== "undefined" ? chName : "匿名";
 		if(typeof optObject !== "object") throw new Error("Type of optObject must be \"object\".");
@@ -200,7 +200,7 @@ class Character implements YosnObject {
 							<pre><code class="language-bash">
 C:\Users\User> cd Yoshinon
 C:\Users\User\Yoshinon> yosgit story add :237 
-Story line 237 added successfully!
+Story line :237 added successfully!
 
 C:\Users\User\Yoshinon> yosgit story checkout -b dxStory01
 Story branch "dxStory01" created successfully!
@@ -212,11 +212,12 @@ Branch activation changed to "dxStory01".
 			</div><!-- /.block -->
 			<div class="block odd">
 				<div class="text">
-					<h2>Modern toolkit. Pinch of magic.</h2>
-					<p>An <a href="/docs/eloquent">amazing ORM</a>, painless <a href="/docs/routing">routing</a>, powerful <a href="/docs/queues">queue library</a>, and <a href="/docs/authentication">simple authentication</a> give you the tools you need for modern, maintainable PHP. We sweat the small stuff to help you deliver amazing applications.
+					<h2>分かりやすい変数と関数</h2>
+					<p>
+						キャラクターを生成するためにコアを確認する必要がありません。ただCharacterオブジェクトを生成するだけでノーベルで使用キャラクターを定義することができます。
+					</p>
 				</div>
 				<div class="media">
-
 					<div class='browser-window'>
 						<div class='top-bar'>
 							<div class='circles'>
@@ -226,21 +227,24 @@ Branch activation changed to "dxStory01".
 							</div>
 						</div>
 						<div class='window-content'>
-							<pre class="line-numbers"><code class="language-php">
-Route::resource('photos', 'PhotoController');
+							<pre class="line-numbers"><code class="language-javascript">
+var chExample = new Character("例人", {
+	"color": "#FF00FF",
+	"decoration": "underline"
+});
 
-/**
- * Retrieve A User...
- */
-Route::get('/user/{id}', function($id)
-{
-	return User::with('posts')->firstOrFail($id);
-})
-</code></pre>
+chExample.say("愛しています、皆さん！");
+chExample.voice(new Voice("Anon/minna_aisuru.wav"));
+
+chExample.selection([
+	{ "title": "私もそうです！", "description": "私はあなたを愛しています。", "on": function(){} },
+	{ "title": "バカじゃないの？", "description": "吉野の精神が飛んだようです。", "on": function(){} }
+]);
+							</code></pre>
+						</div>
 					</div>
-				</div>
-			</div><!-- /.block -->
-		</div>
+				</div><!-- /.block -->
+			</div>
 		<a href="#ecosystem" class="next-up">
 			The Laravel Ecosystem
 			<img src="/assets/img/down-arrow.png">
